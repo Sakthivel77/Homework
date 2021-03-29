@@ -18,5 +18,26 @@ def isPrime(n):
         return True
         #reaches here if recursion ends and list has only 2 integers and the rest are none
 
+def isPrimez(n):
+    # since 1 is not a prime
+    if n == 1:
+        return False
+    elif isinstance(n,int):
+        global x
+        x = 1
+        return isPrimez([n,1])
+    elif n[0]-x != 1:
+        x += 1
 
+        if n[0]%x==0:
+            return False
+        else:
+            return isPrimez(n)
+    else:
+        return True
+print(isPrimez(29))
+
+        
+        
 print(isPrime(541))
+print(isPrimez(541))
