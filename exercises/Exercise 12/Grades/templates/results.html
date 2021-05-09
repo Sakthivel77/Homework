@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Exercise 12</title>
+  <link rel= 'stylesheet' href='../static/form2.css'>
+</head>
+<body>
+  
+  <table>
+    <tr><th colspan="2"><h2>Final Score Calculator</h2></th></tr>
+    <form action='/submit' method = 'POST'>
+      <tr>
+        <th><h3>Marks (out of 100)</h3></th>
+        <th><h3>Weightage (%))</h3></th>
+        </td>
+      </tr>
+      <tr>
+        <td><input type = 'text' name=m1 value = {{m1}}></td>
+        <td><input type = 'text' name=m2 value = {{m2}}></td>
+      </tr>
+      <tr>
+        <td><input type = 'text' name=w1 value = {{w1}}></td>
+        <td><input type = 'text' name=w2 value = {{w2}}></td>
+      </tr>
+      <tr>
+        <td align = center colspan=2><h2>{{score}}</h2></td>
+      </tr>
+      <tr>
+        <td align = center colspan=2><input type="submit" value="Submit"></td>
+      </tr>
+        
+    </form>
+    
+  </table>
+
+</body>
+</html>

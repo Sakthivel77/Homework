@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link rel="stylesheet" href="/static/products.css" />
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li>Home</li>
+            <li>View Catalogue</li>
+            <li>Manage Catalogue</li>
+            <li>Help</li>
+        </ul>
+    </div>
+    <h1> Products</h1>
+    <form action= '/AddProduct' method = 'POST'>
+    <input type="submit" value='Add Products'>
+    </form>
+    <!--
+    <div class="product-list">
+         <div class="product">
+            <div class="product-image">
+                <image src="/static/images" alt="product image">
+            </div>           
+            <div class="product-text">
+                <div class="product-name">product name</div>
+                <div class="product-description">product description</div>
+                <div class="product-price">product price</div>
+            </div>
+        </div>
+    </div>
+-->
+
+    <div class="product-list">
+        {% for line in products %}
+        <div class="product">
+            <div class="product-image">
+                <image src='{{line[3]}}' alt='product image'>
+            </div>
+            <div class="product-text">
+                <div class="product-name">{{line[0]}}</div>
+                <div class="product-description">{{line[1]}}</div>
+                <div class="product-price">{{line[2]}}</div>
+            </div>
+        </div>
+        {% endfor %}
+
+    
+</body>
+</html>

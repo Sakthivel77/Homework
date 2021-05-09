@@ -1,0 +1,4 @@
+Baby Rockie,Outdoor Backpack,42.00,babyrockie.jpeg
+Zenon EOS6D,SLR Pro Camera,1392.00,ZenonEOS6D.jpg
+Zenva glasses,A classical design,0.50,Zenvaglasses.jpg
+Smart Band,4/7 heart rate monitoring,365.00,SmartBand.jpg
