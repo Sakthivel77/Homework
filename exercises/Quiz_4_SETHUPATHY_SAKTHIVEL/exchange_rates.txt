@@ -1,0 +1,6 @@
+0, US Dollar, USD, 2.0, 1.50292
+1, Chinese Yuan Renminbi, CNY, 1.0, 4.82844
+2, Malaysian Ringgit, MYR, 0.96805, 3.0 
+3, Canadian Dollar, CAD, 2.71654, 3.0
+4, Indonesian Rupiah, IDR, 10.0, 107466
+5, British Pound, GBP, 1.88809, 1.0
